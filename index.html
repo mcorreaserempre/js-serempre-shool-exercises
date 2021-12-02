@@ -1,37 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title></title>
-</head>
-<body>
-	<form action="">
-		<label for="name">Nombre</label>
-		<br>
-		<input type="text" id="name" name="name">
-		<br>
-		<label for="phone-number">Celular</label>
-		<br>
-		<input type="number" id="phone-number" name="phone-number">
-		<br>
-		<label for="email">E-mail</label>
-		<br>
-		<input type="email" id="email" name="email">
-		<br>
-		<br>
-		<label for="country">País</label>
-		<br>
-		<select id="country" name="country">
-			<option value="default-option">Seleccione el país</option>
-			<option value="CO">Colombia</option>
-			<option value="ESP">España</option>
-			<option value="ARG">Argentina</option>
-			<option value="BRA">Brasil</option>
-		</select>
-		<br>
-		<br>
-		<input type="submit">
-		
-	</form>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Pokemon</title>
+	</head>
+	<body>
+		<h1>Hola soy un pokeon</h1>
+		<img id="pokemon" src="sdhsajdsgsdgjsa.png" alt="" srcset="" style="margin: 0 auto;">
+		<script>
+			//Load pokemon image
+			const setPokeon = document.querySelector("#pokemon");
+			function sendPokemon(image){
+				setPokeon.setAttribute('src',image);
+			}
+			// Fetch to api pokemon
+			fetch('https://pokeapi.co/api/v2/pokemon/700')
+				.then(response  => response.json())
+				.then(data => sendPokemon(data.sprites.front_default))
+		</script>
+	</body>
 </html>
