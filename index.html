@@ -16,7 +16,7 @@
 				pokemonImage.setAttribute('src',image);
 			}
 			// Fetch to api pokemon
-			fetch('https://pokeapi.co/api/v2/pokemon/700')
+			fetch('https://pokeapi.co/api/v2/pokemon/3')
 				.then(response  => response.json())
 				.then(data => sendPokemon(data.sprites.front_default))
 		</script>
