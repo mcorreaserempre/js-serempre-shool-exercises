@@ -11,9 +11,9 @@
 		<img id="pokemon" src="sdhsajdsgsdgjsa.png" alt="" srcset="" style="margin: 0 auto;">
 		<script>
 			//Load pokemon image
-			const setPokeon = document.querySelector("#pokemon");
+			const pokemonImage = document.querySelector("#pokemon");
 			function sendPokemon(image){
-				setPokeon.setAttribute('src',image);
+				pokemonImage.setAttribute('src',image);
 			}
 			// Fetch to api pokemon
 			fetch('https://pokeapi.co/api/v2/pokemon/700')
