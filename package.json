@@ -1,0 +1,16 @@
+{
+  "name": "pokemonpoobabel",
+  "version": "1.0.0",
+  "description": "Esta es una breve descripcion referente al proyecto pokemon B|",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel index.js -o dist/compile.js"
+  },
+  "author": "este papito",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.12",
+    "@babel/preset-env": "^7.16.11"
+  }
+}
